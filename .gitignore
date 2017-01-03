@@ -1,0 +1,40 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sql.gz
+*.sqlite
+database.yml
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# Wordpress files #
+###################
+.htaccess
+wp/*
+!wp/.gitkeep
+sitemap.xml
+sitemap.xml.gz
+content/uploads/*
+content/upgrade/*
+content/cache/*
+content/backup/*
+wp-config.php
+
+# Misc #
+###################
+_assets
+node_modules
+/vendor
+composer.lock
+# dev/node_modules/.bin
+# dev/node_modules/**/.bin
+# dev/node_modules/**/out
+# dev/node_modules/**/build
+*.sass-cache*
+ai-cache/*
+.idea
