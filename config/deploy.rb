@@ -5,18 +5,18 @@ lock '3.6.1'
 # Setup WordPress
 ############################################
 
-set :wp_user, "yourname" # The admin username
-set :wp_email, "yourname@example.com" # The admin email address
-set :wp_sitename, "Rudiments Stack" # The site title
-set :wp_localurl, "http://example.dev" # Your local environment URL
-set :wp_localserver, "example.dev" # Your local environment server without the http(s)://
+set :wp_user, "threefiveadmin" # The admin username
+set :wp_email, "wpadmin@3five.com" # The admin email address
+set :wp_sitename, "3five Foosball League" # The site title
+set :wp_localurl, "http://tffl.dev" # Your local environment URL
+set :wp_localserver, "tffl.dev" # Your local environment server without the http(s)://
 
 ############################################
 # Setup project
 ############################################
 
-set :application, "wp-deploy"
-set :repo_url, "git@github.com:3five/Rudiments-Stack.git"
+set :application, "tffl"
+set :repo_url, "git@github.com:Vinsanity/TFFL.git"
 set :scm, :git ### This will be depricated in Capistrano v3.7
 
 ############################################
@@ -31,7 +31,7 @@ set :wpcli_local_db_backup_dir, 'db_backups/'
 ## Vagrant WPCLI Settings
 # THIS MUST BE SET FOR WPCLI TO WORK.
 server fetch(:wp_localserver), user: 'vagrant', password: 'vagrant', roles: %w{dev}, no_release: true # Change this only if it differs from :wp_localserver
-set :dev_path, "/srv/www/example/htdocs" # Vagrant dev path for WPCLI usage.
+set :dev_path, "/srv/www/tffl/htdocs" # Vagrant dev path for WPCLI usage.
 
 ############################################
 # Setup Capistrano

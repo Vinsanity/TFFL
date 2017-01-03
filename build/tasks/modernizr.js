@@ -7,7 +7,7 @@ const themeDir = path.resolve(__pkg._themepath)
 
 gulp.task('modernizr', (done)=> {
   modernizr.build(modernizrOpts, (contents)=> {
-    let p = path.resolve(themeDir, 'scripts/vendors/modernizr.js')
+    let p = path.resolve(themeDir, 'assets/src/js/vendors/modernizr.js')
     fs.writeFile(p, contents, done)
   })
 })
